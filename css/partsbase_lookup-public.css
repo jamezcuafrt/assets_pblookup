@@ -1,0 +1,388 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.partsBaseLookUpFromCont{
+	margin: 15px 0px;
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700');
+/**************************************************/
+/** Section of that makes the widget collapsable **/
+/**************************************************/
+#collapsible {
+	display: none;
+}
+
+#leftTab{
+	transform: rotate(270deg);
+	transform-origin: left 15px;
+	background: rgba(0,40,87,1.0); /* light blue */
+	padding: 0px 5px 5px 8px;
+	width: 300px;
+	border-radius: 2px 2px 50px 50px;
+}
+
+#leftTab a{
+	color:#fff;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+#leftTab a:hover{
+	color:#fff;
+	font-weight: 700;
+}
+
+.floatElemFrt{
+	display: block;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1rem;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: all 0.25s ease-out;
+	/* border: 1px #000 solid !important; */
+}
+.floatElemFrt .miniSrchText{
+	font-family: "Source Sans Pro", sans-serif !important;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-top: 0px;
+	border: none !important;
+	display: inline-block;
+	max-width: 130px;
+	border-radius: unset;
+}
+
+.floatElemFrt .btn-primaryFRT{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background-color: rgba(42,125,226,1.0) !important; /* light blue */ 
+	padding: 3px 8px !important;
+	background-image: none;
+	border-radius: 0px;
+	text-transform: none !important;
+	border: 0px;
+	font-weight: normal;
+	font-size: 1.0em;
+}
+.floatElemFrt .btn-primaryFRT:hover{
+	color: #fff !important;
+	background: rgba(0,40,87,1.0) !important; /* dark Blue*/
+}
+.modalFRT {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 40px; /* Location of the box */
+	left: 0;
+	top: 0px;
+	width: 100%; /* Full width */
+	/* height: 100%; Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentFRT {
+	background-color: #fefefe;
+	margin: 17vh auto;
+	padding: 0px 20px 20px 20px;
+	border: 1px solid #888;
+	width: 70%;
+}
+.showOnMobil{
+	display:none !important;
+}
+.showOnDesk	{
+	display:inline-block !important;
+}
+@media (min-width: 768px) {
+	.modal-contentFRT {
+		margin: 17vh auto;
+		width: 90%;
+	}
+	.showOnMobil{
+		display:inline-block !important;
+	}
+	.showOnDesk	{
+		display:none !important;
+	}
+}
+@media (min-width: 992px) {
+	.modal-contentFRT {
+		margin: 17vh auto;
+		width: 80%;
+	}
+	.showOnMobil{
+		display:none !important;
+	}
+	.showOnDesk	{
+		display:inline-block !important;
+	}
+}
+@media (min-width: 1200px) {
+	.modal-contentFRT {
+		margin: 17vh auto;
+		width: 80%;
+	}
+	.showOnMobil{
+		display:none !important;
+	}
+	.showOnDesk	{
+		display:inline-block !important;
+	}
+}
+
+/* The Close Button */
+.closeFRT {
+	color: #aaaaaa !important;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeFRT:hover,
+.closeFRT:focus {
+	color: #000 !important;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.wrap-collabsible{
+	position: fixed;
+	top:80%;
+	left:0%;
+	z-index: 9999;
+}
+/******************************************************/
+/** END Section of that makes the widget collapsable **/
+/******************************************************/
+
+/* Modify elements inside search form styles */
+.wrapperSearchformFRT{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background-color: #fff !important;
+	padding-left: 0px 20px 20px 20px;
+	padding-right: 20px;
+	/* z-index: 88 !important; */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 15px;
+}
+.wrapperSearchformFRT	.form-group .is-focused .form-control {
+	background-image: none;
+}
+.wrapperSearchformFRT .form-group{
+	padding-top:7px !important; 
+	padding-bottom:7px !important; 
+}
+.wrapperSearchformFRT	.form-group .form-control {
+	background-image: none;
+}
+.wrapperSearchformFRT .input-group-btn{
+	padding: 0px 12px 0px 0px !important;
+}
+
+#srh-text{
+	font-family: "Source Sans Pro", sans-serif !important;
+	box-shadow: 0px 4px 8px 0px rgba(57,57,57,0.2);
+	border: unset !important;
+	width: 60%;
+	border-radius: unset;
+	font-size: 14px;
+	display: inline-block;
+    padding: 10px 15px;
+    border-radius: 0;
+    margin-bottom: 0px;
+    -webkit-appearance: none;
+    height:unset;
+    line-height: 22px;
+}
+#srh-text::placeholder{
+	line-height: unset;
+	font-size: 14px;
+}
+#searchformFRT {
+	margin-bottom: 0px;
+	font-size: 12px !important;
+	background-color: #fff !important;
+	padding-bottom: 0px !important;
+}
+#searchformFRT .row{
+	margin:0px 10px;
+}
+#searchformFRT p {
+	font-size: 12px;
+	font-family: "Source Sans Pro", sans-serif !important;
+	margin-bottom: 1px;
+}
+#searchformFRT label {
+	font-size: 14px;
+	font-family: "Source Sans Pro", sans-serif !important;
+	margin-bottom: 1px;
+	line-height: 22px;
+	margin-top: 10px;
+}
+#searchformFRT select{
+	font-family: "Source Sans Pro", sans-serif !important;
+	padding:0px 5px;
+	border-top:0 !important;
+	border-left:0 !important;
+	border-right:0 !important;
+	border-bottom:2px solid #4D4D4D !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+	font-size: 1.1em;
+}
+/* the blue button  */
+#searchformFRT .btn-primaryFRT{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background-color: rgba(42,125,226,1.0) !important; /* light blue */ 
+	padding: 10px 15px !important;
+	background-image: none;
+	border-radius: unset;
+	display: inline-block;
+	-webkit-appearance: none;
+	text-transform: none !important;
+	box-shadow: 0 4px 8px 0 rgba(42, 125, 226, 0.3);
+	border: unset;
+	font-weight: 700;
+	font-size: 14px;
+	height:unset;
+	line-height: 22px;
+
+}
+#searchformFRT .btn-primaryFRT:hover{
+	color:#fff !important;
+	background: rgba(0,40,87,1.0) !important; /* dark Blue*/
+}
+/* the green button */
+#searchformFRT .btn-successFRT{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background: #06D678 !important;
+	padding: 10px 15px !important;
+	background-image:none;
+	border-radius:0px;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 5px 10px;
+	box-shadow: 0 4px 8px 0 rgba(42, 125, 226, 0.3), 0 6px 10px 0 rgba(42, 125, 226, 0.3);
+}
+#searchformFRT .btn-successFRT:hover{
+	color:#fff !important;
+	background: #026035 !important;
+}
+#searchformFRT img{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+/* modal window close button style */
+.searchformFRTCloseBTN{
+	padding: 10px;
+	background: none !important; 
+	color: darkgray !important;
+	border: none;
+}
+/* ****************************** */
+.topSeparator{
+	/* border-top: solid 1px #CDD6E0; */
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+#pb_lookup_result{
+	font-size: 12px !important;
+	border: none;
+}
+#pb_lookup_result thead > tr > th{
+	font-size: 14px !important;
+	border: none;
+}
+#pb_lookup_result tbody > tr > td{
+	padding:8px !important;
+	font-size: 12px !important;
+	border: none !important;
+}
+#pb_lookup_result tfoot{
+	background: #fff !important;
+}
+#pb_lookup_result .paginationFRT > li > a, .paginationFRT > li > span{
+	border: none !important;
+}
+#pb_lookup_result .form-group{
+	padding-bottom: 0px !important;
+}
+#pb_lookup_result .btn-number{
+	background: transparent;
+	color: #06D678 !important;
+	box-shadow: 0px 0px 0px 0px !important;
+}
+#pb_lookup_result .btn-primaryFRT{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background-color: #2A7DE2 !important;
+	background-image:none;
+	padding-left:10px;
+	padding-right:10px;
+	font-size: initial;
+	border: none;
+	font-weight: normal;
+}
+#pb_lookup_result .btn-primaryFRT:hover{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background-color: #2A7DE2 !important;
+	color:#fff;
+}
+#pb_lookup_result .btn-successFRT{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background-color: #06D678 !important;
+	background-image:none;
+	text-transform: none !important;
+	box-shadow: 0 4px 8px 0 rgba(42, 125, 226, 0.3), 0 6px 10px 0 rgba(42, 125, 226, 0.3);
+	padding-left:10px;
+	padding-right:10px;
+	font-size: 14px;
+	border: none;
+	font-weight: 700;
+}
+
+#pb_lookup_result .btn-successFRT:hover{
+	color: #fff;
+	background-color: rgba(6,214,120,0.7) !important;
+}
+#pb_lookup_result .paginationFRT{
+	width: auto !important;
+}
+
+.imgFooter{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+
+.imgFooter span{
+	vertical-align: top;
+	font-weight: 700;
+}
+
+.imgFooter img{
+	vertical-align: text-top;
+}
+
+.btn-successFRT{
+	font-family: "Source Sans Pro", sans-serif !important;
+	background-color: #06D678 !important;
+	background-image:none;
+	text-transform: none !important;
+	box-shadow: 0 4px 8px 0 rgba(42, 125, 226, 0.3), 0 6px 10px 0 rgba(42, 125, 226, 0.3);
+	padding-left:10px;
+	padding-right:10px;
+	font-size: 14px;
+	border: none;
+	font-weight: 700;
+}
+
+.btn-successFRT:hover{
+	color: #fff;
+	background-color: rgba(6,214,120,0.7) !important;
+}
